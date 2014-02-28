@@ -5,6 +5,12 @@
   </head>
   <body>
     <!-- Add your PHP code in the tag below -->
-    <p></p>
+    
+    <?php 
+    	$foo = "my";
+    	$foo .="name";
+    	$foo .="is";
+    	$foo .="carly";
+    echo "my" . "" . "name" . "" . "is" . "" . "carly"; ?> </p>
   </body>
 </html>

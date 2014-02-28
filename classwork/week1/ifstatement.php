@@ -7,11 +7,17 @@
     <p>Complete the if statement</p>
     <p>
       <?php
-        $age =      // Set this to a number greater than 18
-
-        ___ ($age > 18) ___
-          echo "You're old enough to vote!";
-        ___
+        $bill =  15;    // Set this to a number greater than 18
+        $money = 10;
+        if ($money > $bill) {
+          echo "You have more than enough to pay";
+        }
+        elseif ($money == $bill) {
+          echo "Just enough";
+           }
+        else {
+          echo "You don't have enough money!";
+        }
       ?>
     </p>
   </body>
