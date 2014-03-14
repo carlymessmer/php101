@@ -5,7 +5,16 @@
   </head>
   <body>
     <?php
-    // assign your name to a variable
+    $myname = "Carly Jane Messmer";
+        // assign your name to a variable
+    $array = explode(' ', $myname);
+        var_dump($array);
+        echo "<br>";
+    rsort($array);
+    var_dump($array);
+    echo "<br>";
+    $array = implode(" ", $array);
+    var_dump($array);
     // explode your name to an array
     // reverse the array and the join it
 

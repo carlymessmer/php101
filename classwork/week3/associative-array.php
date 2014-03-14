@@ -8,7 +8,7 @@
       $cars = array(
           array(
             "make" => "Aston Martin",
-            "model" => "V12 Vanquish"
+            "model" => "V12 Vanquish",
             "year" => 2014,
             "doors" => 2,
             "transmission" => "Manual",
@@ -18,7 +18,7 @@
           ),
           array(
             "make" => "Lotus",
-            "model" => "Elise"
+            "model" => "Elise",
             "year" => 2014,
             "doors" => 2,
             "transmission" => "Manual",
@@ -28,7 +28,7 @@
           ),
           array(
             "make" => "Audi",
-            "model" => "R8"
+            "model" => "R8",
             "year" => 2014,
             "doors" => 2,
             "transmission" => "Manual",
@@ -37,6 +37,21 @@
             "price" => 114900
           )
         );
+      foreach ($cars as $key => $value) {
+        foreach ($value as $prop => $foobar) {
+          echo $prop . " : " . $foobar;
+          echo '<br>';
+      } 
+      if ($value['price'] > 200000) {
+          echo "<b>The car is pricey</b>"; 
+          } elseif ($value['price'] > 100000) {
+        echo "<b>That car is out of my league</b>";      
+      }
+        else {
+          echo "<b>The car is afforadable</b>";
+      }
+    }
+      
         // iterate over the array inside on an unordered list tag
         // print out the data in a list item tag like so key: value
         // beneath the key/value information do the following
@@ -44,5 +59,6 @@
         // if the price is over 100000 and under 200000 echo that it is pricey
         // if the price is over 200000 echo that it is out of my league
     ?>
+
   </body>
 </html>
